@@ -26,8 +26,14 @@ class PlayState extends FlxState
 		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 	];
 
-	override public function create()
+	override public function create():Void
 	{
+		map = new FlxTilemap();
+		map.loadMapFromArray(mapData, 20, 12, AssetPaths.tiles__png, 16, 16);
+		add(map);
+
+		player = new FlxSprite(64, 0);
+
 		super.create();
 	}
 
