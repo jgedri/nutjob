@@ -6,6 +6,7 @@ import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.text.FlxText;
 import flixel.tile.FlxTilemap;
+import flixel.util.FlxColor;
 
 class PlayState extends FlxState
 {
@@ -33,6 +34,9 @@ class PlayState extends FlxState
 		add(map);
 
 		player = new FlxSprite(64, 0);
+		player.makeGraphic(16, 16, FlxColor.RED);
+		player.acceleration.y = 420;
+		add(player);
 
 		super.create();
 	}
