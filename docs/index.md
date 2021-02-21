@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/jgedri/nutjob/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Hello! This is my game, proudly made with [HaxeFlixel](https://haxeflixel.com). Have a look around.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
