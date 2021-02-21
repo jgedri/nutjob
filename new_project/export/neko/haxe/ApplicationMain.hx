@@ -19,7 +19,7 @@ class ApplicationMain
 
 		#if (js && html5)
 		#if (munit || utest)
-		lime.system.System.embed("new_project", null, 640, 480);
+		lime.system.System.embed("new_project", null, 640, 360);
 		#end
 		#else
 		create(null);
@@ -32,10 +32,10 @@ class ApplicationMain
 
 		ManifestResources.init(config);
 
-		app.meta["build"] = "1";
-		app.meta["company"] = "HaxeFlixel";
+		app.meta["build"] = "3";
+		app.meta["company"] = "SpiritSoftware";
 		app.meta["file"] = "new_project";
-		app.meta["name"] = "new_project";
+		app.meta["name"] = "Nutjob";
 		app.meta["packageName"] = "com.example.myapp";
 		app.meta["version"] = "0.0.1";
 
@@ -51,13 +51,13 @@ class ApplicationMain
 			element: null,
 			frameRate: 60,
 			#if !web fullscreen: false, #end
-			height: 480,
+			height: 360,
 			hidden: #if munit true #else false #end,
 			maximized: false,
 			minimized: false,
 			parameters: {},
 			resizable: true,
-			title: "new_project",
+			title: "Nutjob",
 			width: 640,
 			x: null,
 			y: null,
