@@ -41,8 +41,25 @@ class PlayState extends FlxState
 		super.create();
 	}
 
-	override public function update(elapsed:Float)
+	override public function update(elapsed:Float):Void
 	{
+		FlxG.collide(map, player);
+
 		super.update(elapsed);
+		movePlayer();
+	}
+
+	private function movePlayer():Void
+	{
+		player.velocity.x = 0;
+
+		if (FlxG.keys.pressed.LEFT)
+			player.velocity.x -= 80;
+
+		if (FlxG.keys.pressed.RIGHT)
+			player.velocity.x += 80;
+
+		if (FlxG.keys.justPressed.C && player.isTouching(FlxObject.FLOOR))
+			player.velocity.y -= 200;
 	}
 }
